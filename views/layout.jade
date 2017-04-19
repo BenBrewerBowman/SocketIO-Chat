@@ -1,7 +1,15 @@
 doctype html
-html
+html(ng-app='Chat')
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    //- main angular FW
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js')
+    //- consume RESTful API's
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-resource.js')
+    //- routing 
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js')
+    //- reference to chat
+    script(src='/javascripts/socketiochat.js')
   body
     block content
